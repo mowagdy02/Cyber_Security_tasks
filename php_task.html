@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(DesktopBackground\(1\).jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        form{
+            background-color: rgba(116, 115, 115, 0.059);
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            backdrop-filter: blur(8px);
+            border: 2px solid white;
+            padding: 20px;
+            min-width: 200px;
+            border-radius: 50px 8px 30px 15px;
+        }
+        input{
+            padding: 5px 10px;
+            width: 60%;
+            background-color: rgba(0, 255, 255, 0);
+            color: rgb(255, 255, 255);
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-color: aliceblue;
+            height: 30px;
+            margin: 10px;
+            font-size: 12pt;
+        }
+        
+        h1{
+            color: white;
+        }
+        .button{
+            font-size: 14pt;
+            background-color: rgba(16, 20, 63, 0.333);
+            height: 40px;
+            border-radius: 5px;
+            color: aliceblue;
+            border: 0;
+            margin-top: 20px;
+            border: 1px solid white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sign_up"><form method="post" action="profile.php">
+        <h1>Sign up</h1>
+       <input  type="email" name="email" placeholder="Email" required><br>
+       <input type="text" name="firstName" placeholder="firstName" required><br>
+       <input type="text" name="lastName" placeholder="lastName" required><br>
+       <input type="number" name="age" placeholder="age"  required><br>
+      <input type="password" name="password" placeholder="password" required><br>
+    <input type="submit" class="button" value="Sign Up">
+    </form></div>
+</body>
+
+</html>
